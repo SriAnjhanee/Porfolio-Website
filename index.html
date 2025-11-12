@@ -4,20 +4,25 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Sri Anjhanee — RPA & AI Student Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+
+  <!-- Link to stylesheet (put styles.css in the same folder as index.html) -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-  <!-- Replace favicon.png with your favicon if available -->
-  <link rel="icon" href="favicon.png" />
+
+  <meta name="description" content="Sri Anjhanee — RPA & AI student. Portfolio showcasing projects, skills, resume and contact.">
+  <link rel="icon" href="favicon.png">
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
       <a class="logo" href="#home">Sri Anjhanee</a>
 
-      <nav class="nav">
+      <nav class="nav" id="main-nav">
         <a href="#home">Home</a>
-        <a href="#about">About</a>
+        <!-- About removed from header as requested -->
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
         <a href="#resume" class="resume-tab">Resume</a>
@@ -31,218 +36,4 @@
   <main>
     <!-- HERO -->
     <section id="home" class="hero">
-      <div class="container hero-grid">
-        <div class="hero-text">
-          <p class="intro">Hello I'm</p>
-          <h1 class="name">Sri Anjhanee</h1>
-          <h2 class="role">RPA & AI student • EEE background • Robotics enthusiast</h2>
-          <p class="lead">
-            I build automation & AI-driven solutions. Skilled in Python, UiPath, n8n, and front-end web development.
-          </p>
-
-          <div class="hero-actions">
-            <a class="btn primary" href="#projects">View Projects</a>
-            <!-- Replace resume.pdf with the path to your resume in the repo -->
-            <a class="btn outline" href="resume.pdf" download>Download Resume</a>
-          </div>
-
-          <ul class="hero-meta">
-            <li><strong>Email:</strong> <a href="mailto:srianjhanee1124@gmail.com">srianjhanee1124@gmail.com</a></li>
-            <li><strong>Phone:</strong> +91 712345678</li>
-            <li><strong>Location:</strong> India</li>
-          </ul>
-        </div>
-
-        <div class="hero-card">
-          <!-- Replace profile.jpg with your profile image -->
-          <img src="profile.jpg" alt="Sri Anjhanee" class="profile-photo" />
-          <div class="card-bio">
-            <h3>About</h3>
-            <p>
-              EEE student at BVC Engineering College. I like robotics, automation, and building tools that save time. I also enjoy dancing, drawing, and photography.
-            </p>
-            <div class="card-tags">
-              <span>Python</span>
-              <span>UiPath</span>
-              <span>n8n</span>
-              <span>HTML/CSS</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ABOUT -->
-    <section id="about" class="section container">
-      <h2 class="section-title">About Me</h2>
-      <p class="section-lead">
-        I'm a student developer focused on RPA and AI automation. I combine an electronics background with programming and automation tools to build practical solutions.
-      </p>
-
-      <div class="two-col">
-        <div>
-          <h4>Interests</h4>
-          <ul>
-            <li>Robotics & embedded systems</li>
-            <li>Automation workflows (UiPath, n8n)</li>
-            <li>Full-stack & front-end development</li>
-            <li>Cybersecurity fundamentals</li>
-          </ul>
-        </div>
-
-        <div>
-          <h4>What I bring</h4>
-          <ul>
-            <li>Hands-on project experience</li>
-            <li>Good communication & teamwork</li>
-            <li>Fast learner and problem solver</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- SKILLS -->
-    <section id="skills" class="section alt">
-      <div class="container">
-        <h2 class="section-title">Skills</h2>
-
-        <div class="skills-grid">
-          <div class="skill-card">
-            <h3>Programming</h3>
-            <p>Python, JavaScript basics, HTML & CSS</p>
-            <div class="skill-bar"><span style="width:80%"></span></div>
-          </div>
-          <div class="skill-card">
-            <h3>RPA & Automation</h3>
-            <p>UiPath, n8n — workflow design & deployment</p>
-            <div class="skill-bar"><span style="width:75%"></span></div>
-          </div>
-          <div class="skill-card">
-            <h3>Cybersecurity</h3>
-            <p>Fundamentals: threat analysis & secure practices</p>
-            <div class="skill-bar"><span style="width:60%"></span></div>
-          </div>
-          <div class="skill-card">
-            <h3>Hardware / Robotics</h3>
-            <p>Circuits, sensors, microcontrollers (intro)</p>
-            <div class="skill-bar"><span style="width:65%"></span></div>
-          </div>
-        </div>
-
-        <div class="cert-edu">
-          <div>
-            <h4>Certifications</h4>
-            <ul>
-              <li>UiPath Foundation (replace with real cert)</li>
-              <li>n8n Automation Basics (replace)</li>
-              <li>Intro to Cybersecurity (replace)</li>
-            </ul>
-          </div>
-
-          <div>
-            <h4>Education</h4>
-            <p><strong>B.Tech — Electrical & Electronics Engineering</strong><br/>BVC Engineering College</p>
-            <p>Expected graduation: 2026</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- PROJECTS -->
-    <section id="projects" class="section">
-      <div class="container">
-        <h2 class="section-title">Latest Projects</h2>
-        <p class="section-lead">A selection of projects demonstrating front-end, automation and tooling work.</p>
-
-        <div class="projects-grid">
-          <!-- Example project card -->
-          <article class="project-card">
-            <img src="project-portfolio.png" alt="Portfolio screenshot">
-            <div class="project-body">
-              <h3>Portfolio Website</h3>
-              <p>Personal website built with HTML & CSS showcasing projects and resume.</p>
-              <div class="project-links">
-                <a href="https://porfolio-website-liart.vercel.app/" target="_blank" rel="noopener">Live</a>
-                <a href="https://github.com/SriAnjhanee/porfolio-website-liart" target="_blank" rel="noopener">Code</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <img src="project-careermate.png" alt="CareerMate screenshot">
-            <div class="project-body">
-              <h3>CareerMate — Automation Project</h3>
-              <p>Automation project built using RPA tools. Visit the repo for detailed README and demo.</p>
-              <div class="project-links">
-                <!-- your earlier provided GitHub link -->
-                <a href="https://github.com/SriAnjhanee/CareerMate-Automation-Project" target="_blank" rel="noopener">Code</a>
-                <a href="https://github.com/SriAnjhanee/CareerMate-Automation-Project" target="_blank" rel="noopener">Details</a>
-              </div>
-            </div>
-          </article>
-
-          <!-- Add more project-card blocks as needed -->
-        </div>
-      </div>
-    </section>
-
-    <!-- RESUME SECTION (a tab on the page + download link) -->
-    <section id="resume" class="section alt">
-      <div class="container">
-        <h2 class="section-title">My Resume</h2>
-        <p class="section-lead">Download the full resume to see detailed experience, projects and certifications.</p>
-        <a class="btn primary" href="resume.pdf" download>Download Resume (PDF)</a>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="section">
-      <div class="container">
-        <h2 class="section-title">Contact Me</h2>
-        <p class="section-lead">Feel free to reach out for collaborations, mentorship or project queries.</p>
-
-        <div class="contact-grid">
-          <div class="contact-card">
-            <h4>Email</h4>
-            <p><a href="mailto:srianjhanee1124@gmail.com">srianjhanee1124@gmail.com</a></p>
-          </div>
-
-          <div class="contact-card">
-            <h4>Follow</h4>
-            <p>
-              <!-- replace with your actual profiles -->
-              <a href="#" target="_blank" rel="noopener">LinkedIn</a> ·
-              <a href="#" target="_blank" rel="noopener">GitHub</a>
-            </p>
-          </div>
-
-          <div class="contact-card">
-            <h4>Phone</h4>
-            <p>+91 712345678</p>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <p>© <span id="year"></span> Anjhanee K. All rights reserved.</p>
-    </div>
-  </footer>
-
-  <script>
-    // small JS for header year and mobile menu
-    document.getElementById('year').textContent = new Date().getFullYear();
-
-    const toggle = document.querySelector('.menu-toggle');
-    const nav = document.querySelector('.nav');
-    toggle.addEventListener('click', () => {
-      nav.classList.toggle('open');
-    });
-  </script>
-</body>
-</html>
-
-
-
+      <div class="container hero-grid"
